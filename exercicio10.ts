@@ -6,7 +6,11 @@ class Numero {
 
 class Categoria extends Numero {}
 
-class Teste extends Categoria {}
+class Teste extends Categoria {
+  public aleatorio(): number {
+    return super.aleatorio();
+  }
+}
 
 const teste = new Teste();
 console.log("Valor:", teste.aleatorio());
